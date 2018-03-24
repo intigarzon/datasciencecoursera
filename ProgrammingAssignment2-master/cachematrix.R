@@ -7,7 +7,7 @@
 
 makeCacheMatrix <- function(x = matrix()) {
   
-  makeCacheMatrix <- function(x = matrix()) { ## define argument with default "matrix"
+   ## define argument with default "matrix"
         inv <- NULL                             ## initialise inv as NULL; will hold value of matrix inverse 
         set <- function(z) {                    ## define function SET to assign new 
               x <<- z                             ## value of matrix in parent environment
@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
           list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)  ## referring to functions with 
                                                                                         ## $ operator
   }
-}
+
 
 
 
